@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir archivo</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <style>
+        /* #imagen {
+            cursor: not-allowed;
+            pointer-events: none;
+            background: var(--color-rojo);
+            color: var(--color-rojo);
+        } */
+    </style>
+    <script src="./../vistas/js/url_servidor.js"></script>
+</head>
+<body>
+    <h1>SUBIR archivos</h1>
+    <form action="" id="myForm">
+        <input type="file" id="imagen" name="imagen">
+        <input type="hidden" id="ruta_imagen" required>
+        <div width="300">
+            <img id="imagen-previa" src="" alt="">
+        </div>
+        <button type="submit">Subir </button>
+    </form>
+    
+    <script>
+    
+    const form = document.getElementById('myForm');
+    /* const dropZone = document.getElementById('dropZone'); */
+    const imagenInput = document.getElementById('imagen');
+    const imagenPrevia = document.getElementById('imagen-previa');
+    const hdnImagen = document.getElementById('ruta_imagen');
+
+    const subirArchivo = (()=> {
+        let formData = new FormData();
+        
+        formData.append('imagen', imagenInput.files[0]);
+        fetch(`${URL}/programas/upload`, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            if(data.code=="1"){
+                //exito
+                hdnImagen.value = data.data.nuevo;
+                imagenPrevia.src = `${URL.substring(0, URL.length-4)}/storage/${data.data.nuevo}`;
+            } else {
+                console.log('Error --> ', data.error);
+            }
+        })
+        .catch(error => {
+            console.error('WAAAA ', error);
+        });
+    });
+
+/* 
+  // Evitar que se abra la imagen en el navegador al arrastrarla
+  dropZone.addEventListener('dragover', (event)=> {
+    event.preventDefault();
+  });
+
+  // Manejar el evento de soltar el archivo
+  dropZone.addEventListener('drop', function(event) {
+    event.preventDefault();
+    const selectedFile = event.dataTransfer.files[0];
+    handleFileSelection(selectedFile);
+  }); */
+
+  // Manejar el evento de selección de archivo
+  imagenInput.addEventListener('change', function(event) {
+    const selectedFile = event.target.files[0];
+    handleFileSelection(selectedFile);
+  });
+
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+});
+
+  // Validar el tipo de archivo y mostrar un mensaje de error si no es una imagen
+  function handleFileSelection(file) {
+    const allowedTypes = ['image/jpeg', 'image/png'];
+    if (!file || !allowedTypes.includes(file.type)) {
+      console.log('Por favor, selecciona un archivo de imagen válido (JPEG o PNG).');
+      imagenInput.value = ''; // Limpiar el campo de selección de archivo
+    } else {
+        subirArchivo();
+      if(file.size >= 5242880) {
+        console.log('imagen supera los 5MB o 5242Kb');
+        imagenInput.value = '';
+      }
+    }
+  }
+    </script>
+</body>
+</html>

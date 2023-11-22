@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio -Tv Culturas</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/style-minimal.css">
+        <link rel="stylesheet" href="css/style-medium.css">
+        <link rel="stylesheet" href="css/style-maximum.css">
+        <link rel="stylesheet" href="css/style-maximum-1400.css">
+        <link rel="stylesheet" href="css/style-admin-category.css">
+        <link rel="stylesheet" href="css/detalles-modal.css">
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div class="nuestros-logos">
+            <img src="./../src/logos/logo-con-bicentenario-ministerio-de-culturas.jpg" alt="">
+            <img src="./../src/logos/logo-tv-culturas-facebook.jpg" alt="">
+        </div>
+        <!-- <header>
+            <div class="cabezera-logo-contenedor"><img src="./../src/logos/1x1_oie_1lO3FSDqNbmA-removebg-preview.png" alt=""></div>
+            <h2>TV Culturas</h2>
+            <a href="" class="header-en-directo">
+                <span>EN DIRECTO</span>
+            </a>
+            <button id="enc-boton-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="encabezado-boton-menu" viewBox="0 0 24 24">
+                    <path class="path--black" d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+                </svg>
+                </button>
+        </header> -->
+        <main>
+            <section class="admin-category">
+                <h2>ADMINISTRADOR DE CATEGORIAS</h2>
+                <div class="barras-de-carga">
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                </div>
+                <div class="controles">
+                    <button>
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 401.994 401.994" style="enable-background:new 0 0 401.994 401.994;"xml:space="preserve">
+                            <g>
+                                <path d="M394,154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414
+                                    C242.488,2.666,236.02,0,228.398,0h-54.812c-7.612,0-14.084,2.663-19.414,7.993c-5.33,5.33-7.994,11.803-7.994,19.414v118.775
+                                    H27.407c-7.611,0-14.084,2.664-19.414,7.994S0,165.973,0,173.589v54.819c0,7.618,2.662,14.086,7.992,19.411
+                                    c5.33,5.332,11.803,7.994,19.414,7.994h118.771V374.59c0,7.611,2.664,14.089,7.994,19.417c5.33,5.325,11.802,7.987,19.414,7.987
+                                    h54.816c7.617,0,14.086-2.662,19.417-7.987c5.332-5.331,7.994-11.806,7.994-19.417V255.813h118.77
+                                    c7.618,0,14.089-2.662,19.417-7.994c5.329-5.325,7.994-11.793,7.994-19.411v-54.819C401.991,165.973,399.332,159.502,394,154.175z"
+                                    />
+                            </g>
+                        </svg>
+                        <span>Añadir</span>
+                    </button>
+                    
+                </div>
+                <table>
+                    <tr>
+                        <th>Nro</th>
+                        <th>Categoria</th>
+                        <th>Color Portada</th>
+                        <th >Acciones</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nota Informativa</td>
+                        <td>Rojo</td>
+                        <td class="action">
+                            <button onclick="showOption()">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4780 3950" preserveAspectRatio="xMidYMid meet">
+                                    <g id="layer1" stroke="none">
+                                        <path d="M2063 3613 l-112 -44 -99 -107 c-87 -95 -114 -134 -233 -337 -73 -126 -420 -688 -771 -1248 -748 -1197 -690 -1077 -643 -1306 15 -75 33 -148 40 -162 7 -15 41 -61 76 -103 l63 -76 109 -36 109 -36 1717 7 1716 7 76 38 c101 51 140 108 188 272 l34 117 -33 133 c-28 113 -46 160 -121 309 -72 144 -145 263 -411 665 -178 269 -491 734 -694 1034 -204 300 -399 590 -434 645 -85 134 -162 222 -203 231 -18 3 -36 10 -42 14 -20 15 -105 30 -162 29 -44 -1 -86 -12 -170 -46z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="action-option">
+                                <a class="option-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.98 744.96" version="1.1">
+                                        <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="24" fit-margin-left="0" pagecolor="#ffffff" inkscape:window-height="844" inkscape:window-maximized="0" inkscape:zoom="0.17110443" inkscape:window-x="0" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="1337.0235" inkscape:cy="-553.48697" fit-margin-top="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1589" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                                        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(-105.03 -121.31)" >
+                                            <g id="g4885">
+                                                <g id="g4830" style="fill:#000000" transform="matrix(11.996 0 0 11.996 -1026.7 -3323.3)" >
+                                                    <path id="path11535" sodipodi:nodetypes="sccccscccccccccccccccccccc" inkscape:connector-curvature="0" d="m139.16 289.02c-1.2148-0.82153-2.4093-1.383-3.6056-1.8664l-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675c-1.2539-1.5418-2.4824-2.6188-3.6972-3.4403zm-5.7164 1.0383-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675zm-2.2202 3.0554-17.334 23.854 3.9697 1.2896 16.735-22.702zm4.0836 3.0131-16.643 22.656 2.2523 3.5376 17.61-23.9zm-21.862 21.863-1.8834 9.5262 8.3239-4.591-2.3632-3.5249z" />
+                                                    <path id="rect4819" sodipodi:nodetypes="ssssssccssssssccs" inkscape:connector-curvature="0" d="m101.62 290.19c-4.0274 0-7.2812 3.2539-7.2812 7.2812v44.531c0 4.0274 3.2539 7.25 7.2812 7.25h29.75c4.0274 0 7.2812-3.2226 7.2812-7.25v-34.844l-4.4375 6v27.156c0 2.4813-1.9874 4.5-4.4688 4.5h-26.5c-2.4813 0-4.4688-2.0187-4.4688-4.5v-41.188c0-2.4813 1.9874-4.4688 4.4688-4.4688h21.127l2.8419-4.4688z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span>Editar</span>
+                                </a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" >
+                                        <path d="M0 281.296l0 -68.355q1.953 -37.107 29.295 -62.496t64.449 -25.389l93.744 0l0 -31.248q0 -39.06 27.342 -66.402t66.402 -27.342l312.48 0q39.06 0 66.402 27.342t27.342 66.402l0 31.248l93.744 0q37.107 0 64.449 25.389t29.295 62.496l0 68.355q0 25.389 -18.553 43.943t-43.943 18.553l0 531.216q0 52.731 -36.13 88.862t-88.862 36.13l-499.968 0q-52.731 0 -88.862 -36.13t-36.13 -88.862l0 -531.216q-25.389 0 -43.943 -18.553t-18.553 -43.943zm62.496 0l749.952 0l0 -62.496q0 -13.671 -8.789 -22.46t-22.46 -8.789l-687.456 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 62.496zm62.496 593.712q0 25.389 18.553 43.943t43.943 18.553l499.968 0q25.389 0 43.943 -18.553t18.553 -43.943l0 -531.216l-624.96 0l0 531.216zm62.496 -31.248l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm31.248 -718.704l374.976 0l0 -31.248q0 -13.671 -8.789 -22.46t-22.46 -8.789l-312.48 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 31.248zm124.992 718.704l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm156.24 0l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224z"/>
+                                    </svg>
+                                    <span>Borrar</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Contenido Cultural</td>
+                        <td>Azul</td>
+                        <td class="action">
+                            <button>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4780 3950" preserveAspectRatio="xMidYMid meet">
+                                    <g id="layer1" stroke="none">
+                                        <path d="M2063 3613 l-112 -44 -99 -107 c-87 -95 -114 -134 -233 -337 -73 -126 -420 -688 -771 -1248 -748 -1197 -690 -1077 -643 -1306 15 -75 33 -148 40 -162 7 -15 41 -61 76 -103 l63 -76 109 -36 109 -36 1717 7 1716 7 76 38 c101 51 140 108 188 272 l34 117 -33 133 c-28 113 -46 160 -121 309 -72 144 -145 263 -411 665 -178 269 -491 734 -694 1034 -204 300 -399 590 -434 645 -85 134 -162 222 -203 231 -18 3 -36 10 -42 14 -20 15 -105 30 -162 29 -44 -1 -86 -12 -170 -46z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="action-option">
+                                <a class="option-edit" id="editarFrm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.98 744.96" version="1.1">
+                                        <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="24" fit-margin-left="0" pagecolor="#ffffff" inkscape:window-height="844" inkscape:window-maximized="0" inkscape:zoom="0.17110443" inkscape:window-x="0" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="1337.0235" inkscape:cy="-553.48697" fit-margin-top="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1589" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                                        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(-105.03 -121.31)" >
+                                            <g id="g4885">
+                                                <g id="g4830" style="fill:#000000" transform="matrix(11.996 0 0 11.996 -1026.7 -3323.3)" >
+                                                    <path id="path11535" sodipodi:nodetypes="sccccscccccccccccccccccccc" inkscape:connector-curvature="0" d="m139.16 289.02c-1.2148-0.82153-2.4093-1.383-3.6056-1.8664l-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675c-1.2539-1.5418-2.4824-2.6188-3.6972-3.4403zm-5.7164 1.0383-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675zm-2.2202 3.0554-17.334 23.854 3.9697 1.2896 16.735-22.702zm4.0836 3.0131-16.643 22.656 2.2523 3.5376 17.61-23.9zm-21.862 21.863-1.8834 9.5262 8.3239-4.591-2.3632-3.5249z" />
+                                                    <path id="rect4819" sodipodi:nodetypes="ssssssccssssssccs" inkscape:connector-curvature="0" d="m101.62 290.19c-4.0274 0-7.2812 3.2539-7.2812 7.2812v44.531c0 4.0274 3.2539 7.25 7.2812 7.25h29.75c4.0274 0 7.2812-3.2226 7.2812-7.25v-34.844l-4.4375 6v27.156c0 2.4813-1.9874 4.5-4.4688 4.5h-26.5c-2.4813 0-4.4688-2.0187-4.4688-4.5v-41.188c0-2.4813 1.9874-4.4688 4.4688-4.4688h21.127l2.8419-4.4688z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span>Editar</span>
+                                </a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" >
+                                        <path d="M0 281.296l0 -68.355q1.953 -37.107 29.295 -62.496t64.449 -25.389l93.744 0l0 -31.248q0 -39.06 27.342 -66.402t66.402 -27.342l312.48 0q39.06 0 66.402 27.342t27.342 66.402l0 31.248l93.744 0q37.107 0 64.449 25.389t29.295 62.496l0 68.355q0 25.389 -18.553 43.943t-43.943 18.553l0 531.216q0 52.731 -36.13 88.862t-88.862 36.13l-499.968 0q-52.731 0 -88.862 -36.13t-36.13 -88.862l0 -531.216q-25.389 0 -43.943 -18.553t-18.553 -43.943zm62.496 0l749.952 0l0 -62.496q0 -13.671 -8.789 -22.46t-22.46 -8.789l-687.456 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 62.496zm62.496 593.712q0 25.389 18.553 43.943t43.943 18.553l499.968 0q25.389 0 43.943 -18.553t18.553 -43.943l0 -531.216l-624.96 0l0 531.216zm62.496 -31.248l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm31.248 -718.704l374.976 0l0 -31.248q0 -13.671 -8.789 -22.46t-22.46 -8.789l-312.48 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 31.248zm124.992 718.704l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm156.24 0l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224z"/>
+                                    </svg>
+                                    <span>Borrar</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Contenido Cultural</td>
+                        <td>Azul</td>
+                        <td class="action">
+                            <button onclick="showOption()">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4780 3950" preserveAspectRatio="xMidYMid meet">
+                                    <g id="layer1" stroke="none">
+                                        <path d="M2063 3613 l-112 -44 -99 -107 c-87 -95 -114 -134 -233 -337 -73 -126 -420 -688 -771 -1248 -748 -1197 -690 -1077 -643 -1306 15 -75 33 -148 40 -162 7 -15 41 -61 76 -103 l63 -76 109 -36 109 -36 1717 7 1716 7 76 38 c101 51 140 108 188 272 l34 117 -33 133 c-28 113 -46 160 -121 309 -72 144 -145 263 -411 665 -178 269 -491 734 -694 1034 -204 300 -399 590 -434 645 -85 134 -162 222 -203 231 -18 3 -36 10 -42 14 -20 15 -105 30 -162 29 -44 -1 -86 -12 -170 -46z"/>
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="action-option">
+                                <button class="option-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.98 744.96" version="1.1">
+                                        <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="24" fit-margin-left="0" pagecolor="#ffffff" inkscape:window-height="844" inkscape:window-maximized="0" inkscape:zoom="0.17110443" inkscape:window-x="0" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="1337.0235" inkscape:cy="-553.48697" fit-margin-top="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1589" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                                        <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(-105.03 -121.31)" >
+                                            <g id="g4885">
+                                                <g id="g4830" style="fill:#000000" transform="matrix(11.996 0 0 11.996 -1026.7 -3323.3)" >
+                                                    <path id="path11535" sodipodi:nodetypes="sccccscccccccccccccccccccc" inkscape:connector-curvature="0" d="m139.16 289.02c-1.2148-0.82153-2.4093-1.383-3.6056-1.8664l-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675c-1.2539-1.5418-2.4824-2.6188-3.6972-3.4403zm-5.7164 1.0383-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675zm-2.2202 3.0554-17.334 23.854 3.9697 1.2896 16.735-22.702zm4.0836 3.0131-16.643 22.656 2.2523 3.5376 17.61-23.9zm-21.862 21.863-1.8834 9.5262 8.3239-4.591-2.3632-3.5249z" />
+                                                    <path id="rect4819" sodipodi:nodetypes="ssssssccssssssccs" inkscape:connector-curvature="0" d="m101.62 290.19c-4.0274 0-7.2812 3.2539-7.2812 7.2812v44.531c0 4.0274 3.2539 7.25 7.2812 7.25h29.75c4.0274 0 7.2812-3.2226 7.2812-7.25v-34.844l-4.4375 6v27.156c0 2.4813-1.9874 4.5-4.4688 4.5h-26.5c-2.4813 0-4.4688-2.0187-4.4688-4.5v-41.188c0-2.4813 1.9874-4.4688 4.4688-4.4688h21.127l2.8419-4.4688z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span>Editar</span>
+                                </button>
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" >
+                                        <path d="M0 281.296l0 -68.355q1.953 -37.107 29.295 -62.496t64.449 -25.389l93.744 0l0 -31.248q0 -39.06 27.342 -66.402t66.402 -27.342l312.48 0q39.06 0 66.402 27.342t27.342 66.402l0 31.248l93.744 0q37.107 0 64.449 25.389t29.295 62.496l0 68.355q0 25.389 -18.553 43.943t-43.943 18.553l0 531.216q0 52.731 -36.13 88.862t-88.862 36.13l-499.968 0q-52.731 0 -88.862 -36.13t-36.13 -88.862l0 -531.216q-25.389 0 -43.943 -18.553t-18.553 -43.943zm62.496 0l749.952 0l0 -62.496q0 -13.671 -8.789 -22.46t-22.46 -8.789l-687.456 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 62.496zm62.496 593.712q0 25.389 18.553 43.943t43.943 18.553l499.968 0q25.389 0 43.943 -18.553t18.553 -43.943l0 -531.216l-624.96 0l0 531.216zm62.496 -31.248l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm31.248 -718.704l374.976 0l0 -31.248q0 -13.671 -8.789 -22.46t-22.46 -8.789l-312.48 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 31.248zm124.992 718.704l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm156.24 0l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224z"/>
+                                    </svg>
+                                    <span>Borrar</span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="admin-category">
+                <h2>ADMINISTRADOR DE PROGRAMAS</h2>
+                <div class="barras-de-carga">
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                </div>
+                <div class="controles">
+                    <button id="button-add-program">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 401.994 401.994" style="enable-background:new 0 0 401.994 401.994;"xml:space="preserve">
+                            <g>
+                                <path d="M394,154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414
+                                    C242.488,2.666,236.02,0,228.398,0h-54.812c-7.612,0-14.084,2.663-19.414,7.993c-5.33,5.33-7.994,11.803-7.994,19.414v118.775
+                                    H27.407c-7.611,0-14.084,2.664-19.414,7.994S0,165.973,0,173.589v54.819c0,7.618,2.662,14.086,7.992,19.411
+                                    c5.33,5.332,11.803,7.994,19.414,7.994h118.771V374.59c0,7.611,2.664,14.089,7.994,19.417c5.33,5.325,11.802,7.987,19.414,7.987
+                                    h54.816c7.617,0,14.086-2.662,19.417-7.987c5.332-5.331,7.994-11.806,7.994-19.417V255.813h118.77
+                                    c7.618,0,14.089-2.662,19.417-7.994c5.329-5.325,7.994-11.793,7.994-19.411v-54.819C401.991,165.973,399.332,159.502,394,154.175z"
+                                    />
+                            </g>
+                        </svg>
+                        <span>Añadir</span>
+                    </button>
+                    
+                </div>
+                <div id="contenedor-programa-datos">
+                    <table>
+                        <tr>
+                            <th>Id</th>
+                            <th>Programa</th>
+                            <th>Categoria</th>
+                            <th>Duración</th>
+                            <th >Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="" class="nombre-programa-a">SOMOS CULTURAS</a></td>
+                            <td>NOTA INFORMATIVA</td>
+                            <td>30 min.</td>
+                            <td class="action">
+                                <button onclick="showOption()">
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4780 3950" preserveAspectRatio="xMidYMid meet">
+                                        <g id="layer1" stroke="none">
+                                            <path d="M2063 3613 l-112 -44 -99 -107 c-87 -95 -114 -134 -233 -337 -73 -126 -420 -688 -771 -1248 -748 -1197 -690 -1077 -643 -1306 15 -75 33 -148 40 -162 7 -15 41 -61 76 -103 l63 -76 109 -36 109 -36 1717 7 1716 7 76 38 c101 51 140 108 188 272 l34 117 -33 133 c-28 113 -46 160 -121 309 -72 144 -145 263 -411 665 -178 269 -491 734 -694 1034 -204 300 -399 590 -434 645 -85 134 -162 222 -203 231 -18 3 -36 10 -42 14 -20 15 -105 30 -162 29 -44 -1 -86 -12 -170 -46z"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <div class="action-option">
+                                    <a class="option-edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.98 744.96" version="1.1">
+                                            <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="24" fit-margin-left="0" pagecolor="#ffffff" inkscape:window-height="844" inkscape:window-maximized="0" inkscape:zoom="0.17110443" inkscape:window-x="0" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="1337.0235" inkscape:cy="-553.48697" fit-margin-top="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1589" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                                            <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(-105.03 -121.31)" >
+                                                <g id="g4885">
+                                                    <g id="g4830" style="fill:#000000" transform="matrix(11.996 0 0 11.996 -1026.7 -3323.3)" >
+                                                        <path id="path11535" sodipodi:nodetypes="sccccscccccccccccccccccccc" inkscape:connector-curvature="0" d="m139.16 289.02c-1.2148-0.82153-2.4093-1.383-3.6056-1.8664l-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675c-1.2539-1.5418-2.4824-2.6188-3.6972-3.4403zm-5.7164 1.0383-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675zm-2.2202 3.0554-17.334 23.854 3.9697 1.2896 16.735-22.702zm4.0836 3.0131-16.643 22.656 2.2523 3.5376 17.61-23.9zm-21.862 21.863-1.8834 9.5262 8.3239-4.591-2.3632-3.5249z" />
+                                                        <path id="rect4819" sodipodi:nodetypes="ssssssccssssssccs" inkscape:connector-curvature="0" d="m101.62 290.19c-4.0274 0-7.2812 3.2539-7.2812 7.2812v44.531c0 4.0274 3.2539 7.25 7.2812 7.25h29.75c4.0274 0 7.2812-3.2226 7.2812-7.25v-34.844l-4.4375 6v27.156c0 2.4813-1.9874 4.5-4.4688 4.5h-26.5c-2.4813 0-4.4688-2.0187-4.4688-4.5v-41.188c0-2.4813 1.9874-4.4688 4.4688-4.4688h21.127l2.8419-4.4688z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Editar</span>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" >
+                                            <path d="M0 281.296l0 -68.355q1.953 -37.107 29.295 -62.496t64.449 -25.389l93.744 0l0 -31.248q0 -39.06 27.342 -66.402t66.402 -27.342l312.48 0q39.06 0 66.402 27.342t27.342 66.402l0 31.248l93.744 0q37.107 0 64.449 25.389t29.295 62.496l0 68.355q0 25.389 -18.553 43.943t-43.943 18.553l0 531.216q0 52.731 -36.13 88.862t-88.862 36.13l-499.968 0q-52.731 0 -88.862 -36.13t-36.13 -88.862l0 -531.216q-25.389 0 -43.943 -18.553t-18.553 -43.943zm62.496 0l749.952 0l0 -62.496q0 -13.671 -8.789 -22.46t-22.46 -8.789l-687.456 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 62.496zm62.496 593.712q0 25.389 18.553 43.943t43.943 18.553l499.968 0q25.389 0 43.943 -18.553t18.553 -43.943l0 -531.216l-624.96 0l0 531.216zm62.496 -31.248l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm31.248 -718.704l374.976 0l0 -31.248q0 -13.671 -8.789 -22.46t-22.46 -8.789l-312.48 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 31.248zm124.992 718.704l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm156.24 0l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224z"/>
+                                        </svg>
+                                        <span>Borrar</span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="" class="nombre-programa-a">SOMOS CULTURAS</a></td>
+                            <td>LENGUAS ORIGINARIAS</td>
+                            <td>30 min.</td>
+                            <td class="action">
+                                <button>
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4780 3950" preserveAspectRatio="xMidYMid meet">
+                                        <g id="layer1" stroke="none">
+                                            <path d="M2063 3613 l-112 -44 -99 -107 c-87 -95 -114 -134 -233 -337 -73 -126 -420 -688 -771 -1248 -748 -1197 -690 -1077 -643 -1306 15 -75 33 -148 40 -162 7 -15 41 -61 76 -103 l63 -76 109 -36 109 -36 1717 7 1716 7 76 38 c101 51 140 108 188 272 l34 117 -33 133 c-28 113 -46 160 -121 309 -72 144 -145 263 -411 665 -178 269 -491 734 -694 1034 -204 300 -399 590 -434 645 -85 134 -162 222 -203 231 -18 3 -36 10 -42 14 -20 15 -105 30 -162 29 -44 -1 -86 -12 -170 -46z"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <div class="action-option">
+                                    <a class="option-edit" id="editarFrm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.98 744.96" version="1.1">
+                                            <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="24" fit-margin-left="0" pagecolor="#ffffff" inkscape:window-height="844" inkscape:window-maximized="0" inkscape:zoom="0.17110443" inkscape:window-x="0" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="1337.0235" inkscape:cy="-553.48697" fit-margin-top="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:window-width="1589" inkscape:pageopacity="0.0" inkscape:document-units="px" />
+                                            <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer" transform="translate(-105.03 -121.31)" >
+                                                <g id="g4885">
+                                                    <g id="g4830" style="fill:#000000" transform="matrix(11.996 0 0 11.996 -1026.7 -3323.3)" >
+                                                        <path id="path11535" sodipodi:nodetypes="sccccscccccccccccccccccccc" inkscape:connector-curvature="0" d="m139.16 289.02c-1.2148-0.82153-2.4093-1.383-3.6056-1.8664l-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675c-1.2539-1.5418-2.4824-2.6188-3.6972-3.4403zm-5.7164 1.0383-1.2844 1.7675 7.3028 5.3067 1.2844-1.7675zm-2.2202 3.0554-17.334 23.854 3.9697 1.2896 16.735-22.702zm4.0836 3.0131-16.643 22.656 2.2523 3.5376 17.61-23.9zm-21.862 21.863-1.8834 9.5262 8.3239-4.591-2.3632-3.5249z" />
+                                                        <path id="rect4819" sodipodi:nodetypes="ssssssccssssssccs" inkscape:connector-curvature="0" d="m101.62 290.19c-4.0274 0-7.2812 3.2539-7.2812 7.2812v44.531c0 4.0274 3.2539 7.25 7.2812 7.25h29.75c4.0274 0 7.2812-3.2226 7.2812-7.25v-34.844l-4.4375 6v27.156c0 2.4813-1.9874 4.5-4.4688 4.5h-26.5c-2.4813 0-4.4688-2.0187-4.4688-4.5v-41.188c0-2.4813 1.9874-4.4688 4.4688-4.4688h21.127l2.8419-4.4688z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span>Editar</span>
+                                    </a>
+                                    <a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" >
+                                            <path d="M0 281.296l0 -68.355q1.953 -37.107 29.295 -62.496t64.449 -25.389l93.744 0l0 -31.248q0 -39.06 27.342 -66.402t66.402 -27.342l312.48 0q39.06 0 66.402 27.342t27.342 66.402l0 31.248l93.744 0q37.107 0 64.449 25.389t29.295 62.496l0 68.355q0 25.389 -18.553 43.943t-43.943 18.553l0 531.216q0 52.731 -36.13 88.862t-88.862 36.13l-499.968 0q-52.731 0 -88.862 -36.13t-36.13 -88.862l0 -531.216q-25.389 0 -43.943 -18.553t-18.553 -43.943zm62.496 0l749.952 0l0 -62.496q0 -13.671 -8.789 -22.46t-22.46 -8.789l-687.456 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 62.496zm62.496 593.712q0 25.389 18.553 43.943t43.943 18.553l499.968 0q25.389 0 43.943 -18.553t18.553 -43.943l0 -531.216l-624.96 0l0 531.216zm62.496 -31.248l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm31.248 -718.704l374.976 0l0 -31.248q0 -13.671 -8.789 -22.46t-22.46 -8.789l-312.48 0q-13.671 0 -22.46 8.789t-8.789 22.46l0 31.248zm124.992 718.704l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224zm156.24 0l0 -406.224q0 -13.671 8.789 -22.46t22.46 -8.789l62.496 0q13.671 0 22.46 8.789t8.789 22.46l0 406.224q0 13.671 -8.789 22.46t-22.46 8.789l-62.496 0q-13.671 0 -22.46 -8.789t-8.789 -22.46zm31.248 0l62.496 0l0 -406.224l-62.496 0l0 406.224z"/>
+                                        </svg>
+                                        <span>Borrar</span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="admin-category">
+                <h2>ADMINISTRADOR DE CATEGORIAS</h2>
+                <div class="controles">
+                    <button onclick="crearNuevoregistro()">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 401.994 401.994" style="enable-background:new 0 0 401.994 401.994;"xml:space="preserve">
+                            <g>
+                                <path d="M394,154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414
+                                    C242.488,2.666,236.02,0,228.398,0h-54.812c-7.612,0-14.084,2.663-19.414,7.993c-5.33,5.33-7.994,11.803-7.994,19.414v118.775
+                                    H27.407c-7.611,0-14.084,2.664-19.414,7.994S0,165.973,0,173.589v54.819c0,7.618,2.662,14.086,7.992,19.411
+                                    c5.33,5.332,11.803,7.994,19.414,7.994h118.771V374.59c0,7.611,2.664,14.089,7.994,19.417c5.33,5.325,11.802,7.987,19.414,7.987
+                                    h54.816c7.617,0,14.086-2.662,19.417-7.987c5.332-5.331,7.994-11.806,7.994-19.417V255.813h118.77
+                                    c7.618,0,14.089-2.662,19.417-7.994c5.329-5.325,7.994-11.793,7.994-19.411v-54.819C401.991,165.973,399.332,159.502,394,154.175z"
+                                    />
+                            </g>
+                        </svg>
+                        <span>Añadir</span>
+                    </button>
+                </div>
+                <div width="100%" id="contenedor-categoria-datos"></div>
+            </section>
+        </main>
+        <div class="form-modal"> <!-- ocultar -->
+            <div class="form-modal-botones">
+                <button class="boton-close" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/>
+                    </svg>
+                </button>
+            </div>
+            <form action="../control/proceso_login.php" method="POST">
+                <h1>Iniciar Sesión</h1>
+                <div class="form-grupo">
+                    <input class="form-grupo-control" id="gmail" name="gmail" type="text" required>
+                    <label class="form-grupo-label" for="gmail">Usuario</label>
+                </div>
+                <div class="form-grupo-opciones">
+                    <label class="form-grupo-labe" for="nose">Nose</label>
+                    <select name="nose" id="nose">
+                        <option value="">Selccione</option>
+                        <option value="">Opcion 1</option>
+                        <option value="">Opcion 2</option>
+                    </select>
+                </div>
+                <div class="form-grupo-otro">
+                    <label for="">Subir Foto</label>
+                    <input type="file" name="" id="">
+                </div>
+                <div class="form-grupo-opciones-radio">
+                    <label class="form-grupo-labe" for="nose">Opciones</label>
+                    <div>
+                        <input type="radio" name="ls" id="">
+                        <label for="">hombre</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="ls" id="">
+                        <label for="">mujer</label>
+                    </div>       
+                </div>
+                <div class="form-grupo-opciones-radio">
+                    <label class="form-grupo-labe" for="nose">Opciones ch</label>
+                    <div>
+                        <input type="checkbox" name="ls" id="">
+                        <label for="">Lunes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ls" id="">
+                        <label for="">Martes</label>
+                    </div>
+					<div>
+                        <input type="checkbox" name="ls" id="">
+                        <label for="">Miercoles</label>
+                    </div>
+					<div>
+                        <input type="checkbox" name="ls" id="">
+                        <label for="">Jueves</label>
+                    </div>
+					<div>
+                        <input type="checkbox" name="ls" id="">
+                        <label for="">Viernes</label>
+                    </div>       
+                </div>
+                <div class="form-grupo">
+                    <textarea class="form-grupo-control" id="details" rows="4" required></textarea>
+                    <label class="form-grupo-label" for="details">Detalles</label>
+                </div>
+                <div class="form-grupo">
+                    <input class="form-grupo-control" id="contrasenia" name="contrasenia" type="password" required>
+                    <label class="form-grupo-label" for="contrasenia">Contraseña</label>
+                </div>
+                <div class="form-grupo-opciones-radio">
+                    <label for="">Tiempo (min)</label>
+                    <div class="form-grupo-input-range">
+                        <div class="etiqueta-range">30</div>
+                        <input type="range" value="30" min="5" max="125" id="input-range">
+                    </div>
+                </div>
+                <div class="form-grupo-opciones-radio">
+                    <label for="">Hora inicio</label>
+                        <input type="time"  min="06:00" max="22:30" step="600" id="" required>
+                </div>
+                <div class="form-grupo-labe" style="position: relative;">
+                    <p class="alerta" style="opacity: 1;">Credenciales inválidos !!!</p>
+                </div>
+                <div class="form-grupo">
+                    <button type="submit" class="boton">Iniciar</button>
+                </div>
+            </form>
+        </div>
+        <div class="detalles-modal modal-detalles-none"> <!-- modal-detalles-none -->
+            <div class="contenedor-detalles-modal">
+                <div class="contenedor-detalles-modal-botones">
+                    <button class="boton-close-modal-detalles" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="contenedor-detalles-caracteristicas">
+                    <h3>PUEBLOS DIVERSOS</h3>
+                    <div class="grid-2">
+                        <div><img src="../src/portadas_16x9_culturas/programa_06_sigue_sonando.jpg" alt=""></div>
+                        <div>
+                            <h4>Detalles</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ratione eaque molestias repellendus eos saepe sit quae, iure ex quidem! Nam magnam deserunt minima fuga veniam quo adipisci, perspiciatis vero!</p>
+                            <br>
+                            <h5>Categoria</h5>
+                            <p>LUSDS</p>
+                            <br>
+                            <h5>Duracion promedio</h5>
+                            <p>40 min</p>
+                            <br>
+                            <h5>Dias de emisión</h5>
+                            <div>
+                                <span>Lunes</span> <span>Martes</span>
+                            </div>
+                            <br>
+                            <h5>Horario de Emision</h5>
+                            <p>De 08:00 a 09:00</p>
+                            <br>
+                            <h5>Idioma</h5>
+                            <div>
+                                <span>Castellano</span>
+                                <span>Aymara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-botones-abajo">
+                    <a href="" class="modal-boton-modal-editar boton-color-disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg>
+                        <span>EDITAR</span>
+                    </a>
+                    <a href="" class="modal-boton-modal-eliminar boton-color-rojo">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"> <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                        <span>ELIMINAR</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="app"></div>
+            <div>2023</div>
+        </footer>
+        <script src="js/show-form.js"></script>
+        <script src="js/css-input-range-number.js"></script>
+        <script src="js/detalles-modal.js"></script>
+        <script >
+            const aDetallesPrograma = document.querySelectorAll('.nombre-programa-a');
+            for(let k=0; k<aDetallesPrograma.length; k++){
+                aDetallesPrograma[k].addEventListener("click", (e) => {
+                    let nuevaURL = aDetallesPrograma[k].href;
+                    e.preventDefault();
+                    mostrarContendorDetalles();
+                });
+            }
+        </script>
+        <script type="text/babel">
+            const $app = document.getElementById("app");
+            function MyName(props) {
+              return <h1>{props.name}</h1>;
+            }
+            function 
+            LlenarColumna(props){
+                return(
+                    <tr>
+                        <td>{props.nro}</td>
+                        <td>{props.nombre}</td>
+                        <td>{props.color}</td>
+                        <td className="action">
+                            <a>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M384 480c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0zM224 352c-6.7 0-13-2.8-17.6-7.7l-104-112c-6.5-7-8.2-17.2-4.4-25.9s12.5-14.4 22-14.4l208 0c9.5 0 18.2 5.7 22 14.4s2.1 18.9-4.4 25.9l-104 112c-4.5 4.9-10.9 7.7-17.6 7.7z"/></svg>
+                            </a>
+                            <div className="action-option">
+                                <a className="option-edit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg>
+                                    <span>Editar</span>
+                                </a>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"> <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                                    <span>Borrar</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                );
+            }
+            let arrglo = [{nro:1, nombre: 'Nose', color: "rojo"}, {nro:2, nombre:'Es', color:'verde'}]
+            ReactDOM.render(
+              <div>
+                <MyName name="Andy" />
+                <MyName name="React" />
+                <MyName name="AndyGeek" />
+                <LlenarColumna nro="1" nombre="todas" color="red"/> 
+                <table>
+                    {arrglo.map(pai => <LlenarColumna nro={pai.nro} nombre={pai.nombre} color={pai.color}/> )}
+                </table>
+              </div>,
+              $app
+            );
+          </script>
+    </body>
+</html>

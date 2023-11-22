@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio -Tv Culturas</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/style-minimal.css">
+        <link rel="stylesheet" href="css/style-medium.css">
+        <link rel="stylesheet" href="css/style-maximum.css">
+        <link rel="stylesheet" href="css/style-maximum-1400.css">
+        <link rel="stylesheet" href="css/style-admin-category.css">
+    <body>
+        <div class="nuestros-logos">
+            <img src="./../src/logos/logo-con-bicentenario-ministerio-de-culturas.jpg" alt="">
+            <img src="./../src/logos/logo-tv-culturas-facebook.jpg" alt="">
+        </div>
+        <!-- <header>
+            <div class="cabezera-logo-contenedor"><img src="./../src/logos/1x1_oie_1lO3FSDqNbmA-removebg-preview.png" alt=""></div>
+            <h2>TV Culturas</h2>
+            <a href="" class="header-en-directo">
+                <span>EN DIRECTO</span>
+            </a>
+            <button id="enc-boton-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="encabezado-boton-menu" viewBox="0 0 24 24">
+                    <path class="path--black" d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+                </svg>
+                </button>
+        </header> -->
+        <main>
+            
+            <section class="admin-category">
+                <h2>ADMINISTRADOR DE CATEGORIAS</h2>
+                <div class="controles">
+                    <button onclick="crearNuevoregistro()">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 401.994 401.994" style="enable-background:new 0 0 401.994 401.994;"xml:space="preserve">
+                            <g>
+                                <path d="M394,154.175c-5.331-5.33-11.806-7.994-19.417-7.994H255.811V27.406c0-7.611-2.666-14.084-7.994-19.414
+                                    C242.488,2.666,236.02,0,228.398,0h-54.812c-7.612,0-14.084,2.663-19.414,7.993c-5.33,5.33-7.994,11.803-7.994,19.414v118.775
+                                    H27.407c-7.611,0-14.084,2.664-19.414,7.994S0,165.973,0,173.589v54.819c0,7.618,2.662,14.086,7.992,19.411
+                                    c5.33,5.332,11.803,7.994,19.414,7.994h118.771V374.59c0,7.611,2.664,14.089,7.994,19.417c5.33,5.325,11.802,7.987,19.414,7.987
+                                    h54.816c7.617,0,14.086-2.662,19.417-7.987c5.332-5.331,7.994-11.806,7.994-19.417V255.813h118.77
+                                    c7.618,0,14.089-2.662,19.417-7.994c5.329-5.325,7.994-11.793,7.994-19.411v-54.819C401.991,165.973,399.332,159.502,394,154.175z"
+                                    />
+                            </g>
+                        </svg>
+                        <span>Añadir</span>
+                    </button>
+                </div>
+                <div width="100%" id="contenedor-categoria-datos"></div>
+            </section>
+        </main>
+        
+        <div class="form-modal ocultar">
+            <button class="boton-close" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/>
+                </svg>
+            </button>
+            <form action="" method="POST" id="form-categoria">
+                <h1 id="frm-titulo">NUEVA CATEGORIA</h1>
+                <input type="hidden" name="hdn-id" id="hdn-id">
+                <div class="form-grupo">
+                    <input class="form-grupo-control" id="nombre-categoria" name="nombre-categoria" type="text" required>
+                    <label class="form-grupo-label" for="nombre-categoria">Nombre de la categoria</label>
+                </div>
+                <div class="form-grupo-opciones">
+                    <label class="form-grupo-labe" for="nombre-color">Color</label>
+                    <select name="nombre-color" id="nombre-color" class="rojo" onchange="cambiaColor(this.value)">
+                        <option value="">Selccione Color</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="verde">Verde</option>
+                        <option value="azul">Azul</option>
+                        <option value="morado">Morado</option>
+                    </select>
+                </div>
+                <div class="form-grupo-opciones-radio">
+                    <label class="form-grupo-labe" for="nose">Visible</label>
+                    <div>
+                        <input type="radio" name="ls" id="">
+                        <label for="">SI</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="ls" id="">
+                        <label for="">NO</label>
+                    </div>
+                </div>
+                <div class="form-grupo">
+                    <p class="alerta">Credenciales inválidos !!!</p>
+                    <button type="submit" class="boton" id="frm-boton">Crear</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div id="app"></div>
+            <div>2023</div>
+        </footer>
+        <script src="js/show-form.js"></script>
+    </body>
+</html>

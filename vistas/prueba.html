@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio -Tv Culturas</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/style-minimal.css">
+        <link rel="stylesheet" href="css/style-medium.css">
+        <link rel="stylesheet" href="css/style-maximum.css">
+        <link rel="stylesheet" href="css/style-maximum-1400.css">
+        <link rel="stylesheet" href="css/style-admin-category.css">
+        <style>
+  
+        </style>
+    </head>
+    <body>
+        <div class="nuestros-logos">
+            <img src="./../src/logos/logo-con-bicentenario-ministerio-de-culturas.jpg" alt="">
+            <img src="./../src/logos/logo-tv-culturas-facebook.jpg" alt="">
+        </div>
+        <!-- <header>
+            <div class="cabezera-logo-contenedor"><img src="./../src/logos/1x1_oie_1lO3FSDqNbmA-removebg-preview.png" alt=""></div>
+            <h2>TV Culturas</h2>
+            <a href="" class="header-en-directo">
+                <span>EN DIRECTO</span>
+            </a>
+            <button id="enc-boton-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="encabezado-boton-menu" viewBox="0 0 24 24">
+                    <path class="path--black" d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path>
+                </svg>
+                </button>
+        </header> -->
+        <main>
+            <section class="admin-category">
+                <h2>ADMINISTRADOR DE CATEGORIAS</h2>
+                <form id="myForm" action="ruta/de/destino" method="POST" enctype="multipart/form-data">
+                <div id="dropZone">
+                  Arrastra y suelta una imagen aquí o haz clic para seleccionar una.
+                </div>
+                <input type="file" id="imagen" name="imagen">
+                <button type="submit">Enviar</button>
+              </form>
+            </section>
+        </main>
+        <footer>
+            <div id="app"></div>
+            <div>2023</div>
+        </footer>
+<script>
+  const form = document.getElementById('myForm');
+  const dropZone = document.getElementById('dropZone');
+  const imagenInput = document.getElementById('imagen');
+
+  // Evitar que se abra la imagen en el navegador al arrastrarla
+  dropZone.addEventListener('dragover', function(event) {
+    event.preventDefault();
+  });
+
+  // Manejar el evento de soltar el archivo
+  dropZone.addEventListener('drop', function(event) {
+    event.preventDefault();
+    const selectedFile = event.dataTransfer.files[0];
+    handleFileSelection(selectedFile);
+  });
+
+  // Manejar el evento de selección de archivo
+  imagenInput.addEventListener('change', function(event) {
+    const selectedFile = event.target.files[0];
+    handleFileSelection(selectedFile);
+  });
+
+  // Validar el tipo de archivo y mostrar un mensaje de error si no es una imagen
+  function handleFileSelection(file) {
+    const allowedTypes = ['image/jpeg', 'image/png'];
+    if (!file || !allowedTypes.includes(file.type)) {
+      alert('Por favor, selecciona un archivo de imagen válido (JPEG o PNG).');
+      imagenInput.value = ''; // Limpiar el campo de selección de archivo
+    } else {
+      console.log(file.size);
+      console.log(5242880);
+      if(file.size >= 5242880) {
+        alert('imagen supera los 5MB');
+        imagenInput.value = '';
+      }
+    }
+  }
+</script>
+
+    </body>
+</html>
